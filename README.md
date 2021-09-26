@@ -10,4 +10,5 @@
 -----
 
 + I cloned KakaoTalk services for HTML, CSS, Git, Javascripts
++ and also, this is test
 
