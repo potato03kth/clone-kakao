@@ -5,4 +5,4 @@
 
 
 # welcome! to my CloneCoding note take Repository!
-## I cloned KakaoTalk services for HTML, CSS, Git, Javascript
+## I cloned KakaoTalk services for HTML, CSS, Git, Javascripts
