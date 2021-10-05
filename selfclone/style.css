@@ -1,12 +1,17 @@
 :root {
   --discord-black: #1f1f24;
   --black-theme-background: --discord-black;
+  --on-hover: khaki;
 }
 
 html {
   color: var(--discord-black);
   background-color: var(--discord-black);
 }
+/* html:hover{
+  background-color: var(--discord-black);
+
+} */
 
 div {
   background-color: burlywood;
@@ -29,18 +34,24 @@ div {
   position: relative;
   opacity: 0.4;
 }
+.chat-box *:hover {
+  background-color: khaki;
+}
+
 .chat-box div {
   width: auto;
   margin: 2px;
 }
 .chat-profile {
   flex-grow: 0;
+  flex-shrink: 0;
 }
 .chat-article {
   display: flex;
   align-content: space-between;
   flex-direction: column;
   flex-grow: inherit;
+  flex-grow: 1;
 }
 .chat-leftside {
   display: flex;
@@ -49,10 +60,13 @@ div {
 }
 .chat-rightside {
   flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .chat-date {
   /* position: absolute; */
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 div [class~="chat"] {
 }
