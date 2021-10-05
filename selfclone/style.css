@@ -37,6 +37,9 @@ div {
 .chat-box *:hover {
   background-color: khaki;
 }
+.chat-article > :hover {
+  background-color: var(--on-hover);
+}
 
 .chat-box div {
   width: auto;
@@ -52,6 +55,9 @@ div {
   flex-direction: column;
   flex-grow: inherit;
   flex-grow: 1;
+}
+.chat-name {
+  display: inline-flex;
 }
 .chat-leftside {
   display: flex;
