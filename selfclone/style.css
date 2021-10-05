@@ -57,7 +57,17 @@ div {
   flex-grow: 1;
 }
 .chat-name {
-  display: inline-flex;
+  /* max-height: 21px; */
+  /* max-width: max-content; */
+  flex-grow: 0;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.chat-thumbnail {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
 }
 .chat-leftside {
   display: flex;
