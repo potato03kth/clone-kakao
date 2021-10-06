@@ -1,0 +1,100 @@
+:root {
+  --discord-black: #1f1f24;
+  --black-theme-background: --discord-black;
+  --on-hover: khaki;
+}
+
+html {
+  color: var(--discord-black);
+  background-color: var(--discord-black);
+}
+/* html:hover{
+  background-color: var(--discord-black);
+
+} */
+
+div {
+  background-color: burlywood;
+  width: 50px;
+  height: 50px;
+  color: aquamarine;
+  border-style: solid;
+  border-color: beige;
+  border-width: 1px;
+  border-radius: 5px;
+}
+.chatting {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: 580px;
+  background-color: transparent;
+  overflow: hidden;
+  overflow: scroll;
+}
+
+.chat-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 390px;
+  height: 85px;
+  min-height: 85px;
+  margin: 0px;
+  position: relative;
+  opacity: 0.4;
+}
+.chat-box *:hover {
+  background-color: khaki;
+}
+.chat-article > :hover {
+  background-color: var(--on-hover);
+}
+
+.chat-box div {
+  width: auto;
+  margin: 2px;
+}
+.chat-profile {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.chat-article {
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+  flex-grow: inherit;
+  flex-grow: 1;
+}
+.chat-name {
+  /* max-height: 21px; */
+  /* max-width: max-content; */
+  flex-grow: 0;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.chat-thumbnail {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+}
+.chat-leftside {
+  display: flex;
+  width: ;
+  flex-grow: 1;
+}
+.chat-rightside {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.chat-date {
+  /* position: absolute; */
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+div [class~="chat"] {
+}
