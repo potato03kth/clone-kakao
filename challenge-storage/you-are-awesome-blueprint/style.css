@@ -6,7 +6,7 @@ form {
     "a box b"
     "a box b"
     "a box b"; */
-  grid-template-columns: auto auto 1fr;
+  grid-template-columns: max-content max-content 200px;
   grid-auto-rows: minmax(30px, auto);
   align-items: stretch;
   /* -ms-grid-row-align: 10px; */
@@ -60,4 +60,13 @@ form datalist {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   text-align: right;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  margin: 30px;
 }
