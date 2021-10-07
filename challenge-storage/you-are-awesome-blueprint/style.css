@@ -1,0 +1,43 @@
+form {
+  /* display:flex ; */
+  /* align-items: flex-start; */
+  display: grid;
+  /* grid-template-areas:
+    "a box b"
+    "a box b"
+    "a box b"; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(30px, auto);
+  align-items: stretch;
+}
+form input {
+  grid-area: box;
+  grid-column: 2 / span 1;
+}
+form input {
+}
+
+form label {
+  grid-area: a;
+  grid-column: 1 / span 1;
+}
+form input :nth-child(1) {
+  grid-row: 1 / 2;
+}
+form input :nth-child(2) {
+  grid-row: 2 / 2;
+}
+form input :nth-child(3) {
+  grid-row: 3 / 3;
+}
+.range:hover {
+  color: tomato;
+  background-color: tomato;
+  /* scrollbar-color: tomato; */
+  flood-color: tomato;
+  column-rule-color: tomato;
+  color-scheme: tomato;
+  color-adjust: tomato;
+  stop-color: every colors are doesnt work fuck;
+  caret-color: where is the slidebar and knob color;
+}
