@@ -1,3 +1,6 @@
+html {
+  background-color: ivory;
+}
 form {
   /* display:flex ; */
   /* align-items: flex-start; */
@@ -12,6 +15,9 @@ form {
   /* -ms-grid-row-align: 10px; */
   grid-row-gap: 7px;
   grid-column-gap: 10px;
+}
+form > {
+  color: ivory;
 }
 form datalist {
   -ms-grid-layer: unset;
@@ -62,6 +68,7 @@ form datalist {
   text-align: right;
 }
 body {
+  background-color: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;
