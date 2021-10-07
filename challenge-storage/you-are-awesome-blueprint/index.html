@@ -2,9 +2,101 @@
 <html lang="ko-kr">
   <head>
     <meta charset="utf-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #abstract {
+        font-size: 32px;
+        /* ha! i did it! */
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-stretch: narrower;
+        font-weight: bold;
+        font-variant: wider;
+        font-kerning: fuck everything out of order;
+      }
+      form {
+        /* display:flex ; */
+        /* align-items: flex-start; */
+      }
+      .range:hover {
+        color: tomato;
+        background-color: tomato;
+        /* scrollbar-color: tomato; */
+        flood-color: tomato;
+        column-rule-color: tomato;
+        color-scheme: tomato;
+        color-adjust: tomato;
+        stop-color: every colors are doesnt work fuck;
+        caret-color: where is the slidebar and knob color;
+      }
+      form > input {
+        display: block;
+      }
+    </style>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    hello everyone
+    <header>
+      <h1 id="abstract">Create An Account</h1>
+    </header>
+    <form>
+      <label for="firstname"> First name</label>
+      <input type="text" id="firstname" placeholder="firstname" />
+
+      <label for="lastname">Last name</label>
+      <input type="text" id="lastname" placeholder="lastname" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="email@example.ex" />
+
+      <label for="usename">Username</label>
+      <input type="text" id="usename" placeholder="Username" />
+
+      <label for="password"> Password</label>
+      <input type="password" id="password" placeholder="more than 10" />
+
+      <label for="birthday">Birth date</label>
+      <input type="date" id="birthday" placeholder="birthday" />
+
+      <!-- <label for="happy">How happy are you?</label>
+      <input
+        type="range"
+        class="range"
+        id="happy"
+        value="happy"
+        min="0"
+        max="10"
+        step="1"
+      /> -->
+
+      <label for="happyier">How happy are you?</label>
+      <input
+        type="range"
+        class="range"
+        id="happyier"
+        list="step-over-flow"
+        step="5"
+      />
+      <datalist id="step-over-flow">
+        <option value="00" label="N at all"></option>
+        <option value="10"></option>
+        <option value="20"></option>
+        <option value="30"></option>
+        <option value="40"></option>
+        <option value="50"></option>
+        <option value="60"></option>
+        <option value="70"></option>
+        <option value="80"></option>
+        <option value="90"></option>
+        <option value="100" label="Totaly"></option>
+      </datalist>
+
+      <label for="favcount">What is your fav.color?</label>
+      <input type="color" id="favcount" value="#ff2621" />
+    </form>
+    <footer>
+      <input type="submit" value=" Create Account" />
+    </footer>
+  </body>
 </html>
