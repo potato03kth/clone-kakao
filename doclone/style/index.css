@@ -1,0 +1,39 @@
+:root {
+  --title-font-size: 30px;
+  --sentence-font-size: 18 px;
+  gap: 20px;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-family: "MBCorpoSTitle-Regular-Web", "DaimlerCS-Regular", Helvetica,
+    Arial, sans-serif;
+}
+
+.title {
+  font-size: var(--title-font-size);
+  font-family: 맑은 고딕;
+}
+.sentence {
+  font-size: var(--sentence-font-size);
+  font-family: "MBCorpoSTitle-Regular-Web", "DaimlerCS-Regular", Helvetica,
+    Arial, sans-serif;
+  opacity: 60%;
+}
+.highlight {
+  font-weight: bold;
+}
+.underline {
+  text-decoration: underline;
+}
+.blued {
+  color: blue;
+  opacity: 80%;
+}
+#sentence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
