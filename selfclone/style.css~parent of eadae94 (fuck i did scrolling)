@@ -23,17 +23,6 @@ div {
   border-width: 1px;
   border-radius: 5px;
 }
-.chatting {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  max-height: 580px;
-  background-color: transparent;
-  overflow: hidden;
-  overflow: scroll;
-}
 
 .chat-box {
   display: flex;
@@ -41,8 +30,7 @@ div {
   align-items: center;
   width: 390px;
   height: 85px;
-  min-height: 85px;
-  margin: 0px;
+  margin: 10px 0px;
   position: relative;
   opacity: 0.4;
 }
